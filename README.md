@@ -54,6 +54,8 @@ The script above will allow you to download the required database list below int
 
 ### 2. Workflow diagram
 
+![Workflow](Targeted-Sequencing-analysis-pipeline-for-Breast-Cancer/images/)
+
 #### Input files
 
 Your input paired-end FastQ file should independantly be processed before they are used in this pipeline. Programs such as [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) can help moniter and access the quality of your reads. For targeted sequenced data, a phred-quality score of Q30 and above is required for detecting variants at a high quality. If you have files with a phred-score below Q30, then you can trim off low qualty reads and remove posible adapter artifacts to reduce false positives and increase the quality of your reads. Programs such as [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) can help remove such files.
