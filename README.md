@@ -54,7 +54,7 @@ The script above will allow you to download the required database list below int
 
 ### 2. Workflow diagram
 
-![Workflow](images/Chapter 4 workflow.png)
+![Workflow](images/Chapter-4-workflow.png)
 
 #### Input files
 
