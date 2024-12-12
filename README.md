@@ -52,17 +52,17 @@ The script above will allow you to download the required database list below int
     - human genome reference file GRCh38/hg38 reference fasta file
 
 
-** Workflow diagram
+### Workflow diagram
 
-** Input files
+#### Input files
 
 Your input paired-end FastQ file should independantly be processed before they are used in this pipeline. Programs such as [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) can help moniter and access the quality of your reads. For targeted sequenced data, a phred-quality score of Q30 and above is required for detecting variants at a high quality. If you have files with a phred-score below Q30, then you can trim off low qualty reads and remove posible adapter artifacts to reduce false positives and increase the quality of your reads. Programs such as [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) can help remove such files.
    
 Your FastQ paired-end files should have either a suffix of $SAMPLE_1/2.fastq or $SAMPLE_R1/R2.fastq, where $SAMPLE corresponds to the Identity name of your file. The pipeline by default experts input files with the extension "fastq". if your files are gzipped, run the command in the folder containing your zipped fastQ files `$ gunzip /path/to/your/input`. 
 
-** How to Run
-
-*** Basic Usage
+#### Perform Analysis
+ 
+Basic Usage
 
 To run the basic command for viewing of the analysis main pipeline usage, run the following command under `${scripts}` directory:
 
@@ -87,3 +87,9 @@ optional arguments:
   -b TARGETED_REGIONS, --targeted_regions TARGETED_REGIONS (Default: None)
                         please specify the targeted regions used for preparing the illumina panel libraries, Optional
 ```
+
+Running the analysis
+
+
+
+
