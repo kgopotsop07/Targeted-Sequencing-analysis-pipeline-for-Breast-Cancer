@@ -22,7 +22,7 @@ Queries can be sent to: kgopotso.phakwago@protonmail.com
 ## Getting Started
 ------------------
 
-### Required dependencies 
+### 1. Required dependencies 
 
 **Pipeline Programming language used**
 1 [python3] (https://www.python.org/) (python v3.9)
@@ -52,7 +52,7 @@ The script above will allow you to download the required database list below int
     - human genome reference file GRCh38/hg38 reference fasta file
 
 
-### Workflow diagram
+### 2. Workflow diagram
 
 #### Input files
 
@@ -60,7 +60,7 @@ Your input paired-end FastQ file should independantly be processed before they a
    
 Your FastQ paired-end files should have either a suffix of $SAMPLE_1/2.fastq or $SAMPLE_R1/R2.fastq, where $SAMPLE corresponds to the Identity name of your file. The pipeline by default experts input files with the extension "fastq". if your files are gzipped, run the command in the folder containing your zipped fastQ files `$ gunzip /path/to/your/input`. 
 
-#### Perform Analysis
+#### 3. Perform Analysis
  
 Basic Usage
 
