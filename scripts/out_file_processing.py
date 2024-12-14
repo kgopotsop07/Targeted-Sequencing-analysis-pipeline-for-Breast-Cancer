@@ -45,7 +45,7 @@ def alignment_handling(sam_outfile, input_ref, gatk_res_folder, file_path, refer
 	init_run_alignment = PrepSeqAlign(sam_outfile)
 	run_samtools = init_run_alignment.align_files_to_ref()
 	subprocess.run(run_samtools, capture_output = True, shell = True)
-	if os.path.isfile(f"{sam_outfile}"):
+	if f"{sam_outfile}".endswith(".sam"):
 		os.remove(f"{sam_outfile}.sam")
 	else:
 		pass
