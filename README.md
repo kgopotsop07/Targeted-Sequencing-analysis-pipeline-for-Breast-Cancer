@@ -18,6 +18,7 @@ When used, **please site:** _Phakwago K. et al. The evaluation and assessment of
 URL to manuscript:
 
 Queries can be sent to: kgopotso.phakwago@protonmail.com
+
 -------------------------------------------------
 ## Getting Started
 ------------------
@@ -60,7 +61,7 @@ The script above will allow you to download the required database list below int
 
 Your input paired-end FastQ file should independantly be processed before they are used in this pipeline. Programs such as [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) can help moniter and access the quality of your reads. For targeted sequenced data, a phred-quality score of Q30 and above is required for detecting variants at a high quality. If you have files with a phred-score below Q30, then you can trim off low qualty reads and remove posible adapter artifacts to reduce false positives and increase the quality of your reads. Programs such as [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) can help remove such files.
    
-Your FastQ paired-end files should have either a suffix of $SAMPLE_1/2.fastq or $SAMPLE_R1/R2.fastq, where $SAMPLE corresponds to the Identity name of your file. The pipeline by default experts input files with the extension "fastq". if your files are gzipped, run the command in the folder containing your zipped fastQ files `$ gunzip /path/to/your/input`. 
+Your FastQ paired-end files should have either a suffix of $SAMPLE_1/2.fastq.gz or $SAMPLE_R1/R2_001.fastq.gz, where $SAMPLE corresponds to the Identity name of your file. The pipeline by default experts input files with the extension "fastq.gz". if your files are gzipped, run the command in the folder containing your zipped fastQ files `$ gunzip /path/to/your/input`. 
 
 #### 3. Perform Analysis
  
@@ -91,7 +92,11 @@ optional arguments:
 ```
 
 Running the analysis
+---------------------------------
+NOTE: Before running the script, a human reference sequence needs to be downloaded from NCBI genbank. The reference sequence then needs to have a prefix that starts with hg19/hg38. The entry IDs for the reference need to show chromosome numbers, for instance chr1-chrY. Example run for the script:
 
+    $ ./run_main_targeted_sequencing_pipeline.py -i <Fastq.gz file path> -r hg38_ref.101.fasta -p perform -a germline
 
+The final output for the annotated files will be located in variant_annotated_files folder with a sufix name `.hg38_multianno.txt`.
 
 
