@@ -95,7 +95,7 @@ Running the analysis
 ---------------------------------
 NOTE: Before running the script, a human reference sequence needs to be downloaded from NCBI genbank. The reference sequence then needs to have a prefix that starts with hg19/hg38. The entry IDs for the reference need to show chromosome numbers, for instance chr1-chrY. Example run for the script:
 
-    $ ./run_main_targeted_sequencing_pipeline.py -i <Fastq.gz file path> -r hg38_ref.101.fasta -p perform -a germline
+    $ ./run_main_targeted_sequencing_pipeline.py -i <fastq.gz file path> -r ~/hg38_ref.101.fasta -p perform -a germline
 
 The final output for the annotated files will be located in variant_annotated_files folder with a sufix name `.hg38_multianno.txt`.
 
