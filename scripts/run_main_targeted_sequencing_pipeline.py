@@ -25,11 +25,13 @@ def run_targeted_sequence_pipeline():
 	##-------------------------------------------------
 	get_variant_reference_file_path = os.path.join(databases,"reference_files","variant_calling_reference_files")
 	get_annotation_reference_file_path = os.path.join(databases,"reference_files","annotationt_reference_files")
+	get_reference_prefix = os.path.split(args.reference_sequence_file)[1][: os.path.split(args.reference_sequence_file)[1].rfind("_")]
 	##------------------RUN PIPELINE-------------------
 	if args.input_path is None or args.reference_sequence_file is None:
 		subprocess.run('bash -c "python3 run_main_targeted_sequencing_pipeline.py -h"', capture_output = True, shell = True)
 	else:
 		execute_alignment_step(args.input_path, args.reference_sequence_file, f"{get_variant_reference_file_path}", args.bqsr, args.analysis_type, f"{get_annotation_reference_file_path}", args.targeted_regions)
+		subprocess.run (f"Rscript {WD}/get_combined_maf_table.R {get_annotation_reference_file_path} {get_reference_prefix}", capture_output = True, shell = True)
 
 if __name__=="__main__":
 	run_targeted_sequence_pipeline()
