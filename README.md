@@ -97,6 +97,6 @@ NOTE: Before running the script, a human reference sequence needs to be download
 
     $ ./run_main_targeted_sequencing_pipeline.py -i <fastq.gz file path> -r ~/hg38_ref.101.fasta -p perform -a germline
 
-The final output for the annotated files will be located in variant_annotated_files folder with a sufix name `.hg38_multianno.txt`.
+The final output for the annotated files will be located in variant_annotated_files folder with a sufix name `.hg38_multianno.txt`. The combinde output files will be merged under `multiannotation_joined_output.tsv`
 
 
