@@ -48,9 +48,10 @@ The script above will allow you to download the required database list below int
 * hg38
     - variant calling reference files: hg_19_indels.knownsites.vcf, hg19_snp.knownsites.vcf, hg19_Mills_indels.knownsites.vcf
     - annotationt reference files: hg38_AFR/AMR/EAS/EUR_2015_08.txt, hg38_cosmic70.txt, hg38_refGene.txt, hg38_avsnp147.txt, hg38_clinvar_20240611.txt 
+
 Manually download the fasta file reference from NCBI Genbank:
-- human genome reference file GRCh37/hg19 reference fasta file or
-- human genome reference file GRCh38/hg38 reference fasta file
+    - human genome reference file GRCh37/hg19 reference fasta file or
+    - human genome reference file GRCh38/hg38 reference fasta file
 
 ### 2. Workflow diagram
 
