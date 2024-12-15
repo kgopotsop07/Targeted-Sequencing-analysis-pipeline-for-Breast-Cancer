@@ -60,7 +60,7 @@ When preparing targeted sequencing libraries, a panel is usually used, which tar
 
 ![Workflow](images/NewPipelineCapture.PNG)
 
-NOTE: The pipeline runs up until it detects the high confidence and correlation of your variants.  
+NOTE: The pipeline runs up until it detects and annotate the high confidence variants. The refinings steps are an addition to consider when running the pipeline. 
 
 #### *Input files*
 
