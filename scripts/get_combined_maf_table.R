@@ -22,7 +22,7 @@ if(length(args)==0){
 #r["CRAN"] = "http://cran.us.r-project.org"
 #options(repos = r)
 
-#packages = c("dada2", "Biostrings",
+#packages = c("dplyr", "Biostrings",
 #             "ShortRead", "ggplot2", "reshape2")
 
 #if (!requireNamespace("BiocManager", quietly = TRUE))
