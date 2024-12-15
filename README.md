@@ -3,7 +3,7 @@
 
 ## Description:
 
-This pipeline is designed for Next-Generation, targeted sequenced analysis of Breast Cancer tumor samples and their associated Patients-specific BC Organoids (PDOs)
+This pipeline is designed to detect and annotate variants within the Next-Generation, targeted sequenced Breast Cancer (BC) data. The pipeline can detect somatic, as well as germline variants and annotate them in the presence or absence of a targeted .bed file.
 
 ## Thesis
 
@@ -52,6 +52,9 @@ The script above will allow you to download the required database list below int
 * Manually download the fasta file reference from NCBI Genbank:
     - human genome reference file GRCh37/hg19 reference fasta file or
     - human genome reference file GRCh38/hg38 reference fasta file
+
+
+When preparing targeted sequencing libraries, a panel is usually used, which targets specific regions within a set number of genes of interest. The library panel usually comes with a specific file called a Browser Extensible Data (.bed) file, which helps you remove off-target regions. Once used, falsely mapped reads will be filtered off, leaving you with target-specific regions, all of which were accounted for duplicates (duplicates are marked-off in the process).
 
 ### 2. Workflow diagram
 
