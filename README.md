@@ -12,7 +12,7 @@ The pipeline was constructed and designed by **Kgopotso Phakwago** for the follo
 **_The evaluation and assessment of breast-cancer related genes between established patient-derived organoids and their tumor of origin within African patients_**
 
 
-When used, **please site:** _Phakwago K. et al. The evaluation and assessment of breast-cancer related genes between established patient-derived organoids and their tumor of origin within African patients_  
+When used, **please site:** _Phakwago K. and Van den Bout I. The evaluation and assessment of breast-cancer related genes between established patient-derived organoids and their tumor of origin within African patients_  
 
 URL to manuscript:
 
